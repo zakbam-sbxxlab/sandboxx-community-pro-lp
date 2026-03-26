@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
+
+  body::-moz-selection {
+    background-color: #FF5522;
+    color: white;
+  }
+
+  body::selection {
+    background-color: #FF5522;
+    color: white;
+  }
+
+  body {
+    background-color: #F3F2EF;
+    color: #1A3545;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Rubik', sans-serif;
+  }
+}
+
+@layer utilities {
+  .noise-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    pointer-events: none;
+    opacity: 0.05;
+  }
+
+  .magnetic-btn {
+    position: relative;
+    overflow: hidden;
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .magnetic-btn:hover {
+    transform: scale(1.03);
+  }
+
+  .magnetic-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: left 0.4s ease;
+    z-index: 1;
+  }
+
+  .magnetic-btn:hover::before {
+    left: 100%;
+  }
+
+  .interactive-lift {
+    transition-property: transform;
+    transition-duration: 300ms;
+  }
+
+  .interactive-lift:hover {
+    transform: translateY(-1px);
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 40s linear infinite;
+  }
+}
