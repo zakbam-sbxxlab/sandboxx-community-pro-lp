@@ -21,7 +21,9 @@ function App() {
         <AnimatedRotate />
         <FAQ />
       </main>
-      <Footer />
+      <div className="bg-[#3B82F6]">
+        <Footer />
+      </div>
     </div>
   );
 }
