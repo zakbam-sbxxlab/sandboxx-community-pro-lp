@@ -75,18 +75,18 @@ export default function AnimatedRotate() {
             >
                 {/* Center SVG Icon (Sandboxx Logo) */}
                 <div className="absolute z-10 w-16 h-16 flex items-center justify-center transform drop-shadow-md relative">
-                    <img src="/assets/sandboxx-icon.png" alt="Sandboxx Logo" className="w-full h-full object-contain" />
+                    <img src={`${import.meta.env.BASE_URL}assets/sandboxx-icon.png`} alt="Sandboxx Logo" className="w-full h-full object-contain" />
                 </div>
 
                 {/* Simulated Avatar bubbles floating around */}
                 <div className="absolute top-[18%] left-[18%] w-12 h-12 md:w-16 md:h-16 rounded-full border-4 border-white shadow-lg z-0 overflow-hidden transform hover:scale-110 transition-transform">
-                    <img src="/profile-1.png" alt="Supporter" className="w-full h-full object-cover" />
+                    <img src={`${import.meta.env.BASE_URL}profile-1.png`} alt="Supporter" className="w-full h-full object-cover" />
                 </div>
                 <div className="absolute bottom-[20%] left-[26%] w-10 h-10 md:w-14 md:h-14 rounded-full border-4 border-white shadow-lg z-0 overflow-hidden transform hover:scale-110 transition-transform">
-                    <img src="/profile-2.png" alt="Member" className="w-full h-full object-cover" />
+                    <img src={`${import.meta.env.BASE_URL}profile-2.png`} alt="Member" className="w-full h-full object-cover" />
                 </div>
                 <div className="absolute top-[32%] right-[10%] w-14 h-14 md:w-20 md:h-20 rounded-full border-4 border-white shadow-lg z-0 overflow-hidden transform hover:scale-110 transition-transform">
-                    <img src="/profile-3.jpg" alt="Community Guide" className="w-full h-full object-cover" />
+                    <img src={`${import.meta.env.BASE_URL}profile-3.jpg`} alt="Community Guide" className="w-full h-full object-cover" />
                 </div>
 
                 {/* Inner Ring (Clockwise) */}

@@ -27,7 +27,7 @@ export default function Navbar() {
         >
             <div className="flex-1 flex items-center shrink-0">
                 <a href="#" className="flex items-baseline gap-1.5 transition-opacity hover:opacity-80 shrink-0 min-w-0">
-                    <img src="/assets/media__1773254697960.png" alt="Sandboxx Logo" className="h-[14px] sm:h-[16px] md:h-[16px] lg:h-[20px] w-auto object-contain object-left shrink-0 translate-y-0.5" />
+                    <img src={`${import.meta.env.BASE_URL}assets/media__1773254697960.png`} alt="Sandboxx Logo" className="h-[14px] sm:h-[16px] md:h-[16px] lg:h-[20px] w-auto object-contain object-left shrink-0 translate-y-0.5" />
                     <span className="font-sans font-bold text-[15px] sm:text-[17px] md:text-lg lg:text-xl tracking-tight text-brand-sea transition-colors duration-300 whitespace-nowrap">
                         Community <span className="text-brand-orange">Pro</span>
                     </span>
