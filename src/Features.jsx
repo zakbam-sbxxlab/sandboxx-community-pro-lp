@@ -106,7 +106,7 @@ export default function Features() {
                         id="group"
                         delay={0}
                         icon={Users}
-                        imgSrc="/assets/feature-group.png"
+                        imgSrc={`${import.meta.env.BASE_URL}assets/feature-group.png`}
                         imgAlt="Battle Buddies Group"
                         title="Battle Buddies Group"
                         subtitle="Small-group support with other families"
@@ -117,7 +117,7 @@ export default function Features() {
                         id="guidebook"
                         delay={0.15}
                         icon={Map}
-                        imgSrc="/assets/feature-guidebook.png"
+                        imgSrc={`${import.meta.env.BASE_URL}assets/feature-guidebook.png`}
                         imgAlt="Community Guidebook"
                         title="Community Guidebook"
                         subtitle="Guides you can actually use today"
@@ -127,7 +127,7 @@ export default function Features() {
                     <FeatureCard
                         delay={0.3}
                         icon={BookOpen}
-                        imgSrc="/assets/feature-agents.png"
+                        imgSrc={`${import.meta.env.BASE_URL}assets/feature-agents.png`}
                         imgAlt="Pocket Guide AI Agents"
                         title="Pocket Guide AI Agents"
                         subtitle="Instant answers for your specific branch"
@@ -138,7 +138,7 @@ export default function Features() {
                         id="academy"
                         delay={0.45}
                         icon={GraduationCap}
-                        imgSrc="/assets/feature-academy.png"
+                        imgSrc={`${import.meta.env.BASE_URL}assets/feature-academy.png`}
                         imgAlt="Community Academy"
                         title="Community Academy"
                         subtitle="Master military communication"

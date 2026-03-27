@@ -31,7 +31,7 @@ export default function Hero() {
             {/* Background Image & Gradient Overlay */}
             <div className="absolute inset-0 z-0">
                 <video
-                    src="/assets/hero-bg-new.mp4"
+                    src={`${import.meta.env.BASE_URL}assets/hero-bg-new.mp4`}
                     autoPlay
                     loop
                     muted
